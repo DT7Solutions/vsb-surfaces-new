@@ -1,0 +1,1 @@
+sass --watch D:\pranta-dropbox\Dropbox\pranto\HTML\ishpat\ishpat-prev\ishpat\assets\scss\main.scss:D:\pranta-dropbox\Dropbox\pranto\HTML\ishpat\ishpat-prev\ishpat\assets\css\main.css

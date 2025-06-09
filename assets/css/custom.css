@@ -1,0 +1,53 @@
+
+:root {
+    --tp-theme-primary: #5098c7;
+    --tp-theme-secondary: #459cd6;
+    /* --tp-theme-1: #0a1229; */
+    --tp-theme-2: #b1daf0;
+    /* --tp-theme-3: #1B2335; */
+    --tp-theme-4: #2c2a2a;
+}
+
+.tp-int-menu.tp-header-pinned {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.tp-header-top.hidden {
+  display: none !important;
+}
+.tp-header-top-info a:hover,
+.tp-header-top-info a:hover span i {
+    color: var(--tp-theme-1);
+}
+.tp-header-top-right-color {
+    padding: 5px 10px 5px 20px;
+}
+.tp-main-menu ul li a {
+    display: inline-block;
+    padding: 28px 0 28px 0;
+}
+.tp-main-menu ul li:hover > a {
+    color: var(--tp-theme-1);
+}
+.tp-header-top-info a:hover,
+.tp-header-top-info a:hover span i {
+    color: var(--tp-theme-1);
+}
+.tp-header-top-right-color {
+    padding: 5px 10px 5px 20px;
+}
+.tp-main-menu ul li a {
+    display: inline-block;
+    padding: 28px 0 28px 0;
+}
+.tp-main-menu ul li:hover > a {
+    color: var(--tp-theme-1);
+}
+.offcanvas__close-btn {
+    right: 7.5%;
+    top: 5%;
+}

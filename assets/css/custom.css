@@ -8,6 +8,7 @@
     --tp-theme-4: #2c2a2a;
 }
 
+/* Header */
 .tp-int-menu.tp-header-pinned {
   position: fixed;
   top: 0;
@@ -50,4 +51,23 @@
 .offcanvas__close-btn {
     right: 7.5%;
     top: 5%;
+}
+
+/* Footer */
+.tp-footer-main {
+    padding-bottom: 2.5%;
+}
+.tp-footer-widget-contact ul li a::before {
+    display: none;
+}
+.tp-footer-widget-contact ul li a:hover {
+    margin-left: 0%;
+}
+.tp-footer-widget-contact ul li a i,
+.tp-footer-widget-contact ul li a:hover i {
+    margin-right: 2.5%;
+}
+.tp-footer-copyright {
+    padding-top: 1.5%;
+    padding-bottom: 1%;
 }

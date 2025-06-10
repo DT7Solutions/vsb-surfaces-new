@@ -1231,7 +1231,7 @@
 				var frontImage = $this.find('img.front').attr('src')
 				var backImage = $this.find('img.back').attr('src')
 				var displacementImage = $this.find('.tp-hover-distort').attr('data-displacementImage')
-		
+
 				var distortEffect = new hoverEffect({
 					parent: canvas[0],
 					intensity: 3,

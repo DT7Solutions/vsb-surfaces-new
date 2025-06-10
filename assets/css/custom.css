@@ -83,6 +83,52 @@
     line-height: 1.15;
 }
 
+/* Get Quote */
+.tp-quote-shape {
+    position: absolute;
+    bottom: 7.5%;
+    right: 5%;
+    z-index: 1;
+}
+.tp-quote-shape img {
+    width: auto;
+    max-width: 200px;
+}
+.tp-quote-wrapper p {
+    text-align: justify;
+}
+.tp-quote-thumb-wrapper {
+    position: relative;
+    padding-top: 0px;
+    padding-left: 25px;
+}
+.tp-quote-thumb-wrapper img {
+    max-width: 100%;
+}
+.tp-quote-thumb-wrapper span {
+    position: absolute;
+    top: 7.5%;
+    left: 5%;
+    display: inline-block;
+    width: 6px;
+    height: 424px;
+    z-index: 0;
+    background: var(--tp-theme-primary);
+}
+
+/* Blog */
+.tp-blog-2-content {
+    padding: 15px 15px 20px;
+}
+.tp-blog-2-title {
+    font-size: 22px;
+    margin-bottom: 5%;
+}
+.tp-blog-2-thumb img {
+    height: auto;
+}
+
+
 /* Footer */
 .tp-footer-main {
     padding-bottom: 2.5%;

@@ -69,6 +69,7 @@
     width: 65%;
 }
 .tp-hero-5-bg::after {
+    display: none;
     position: absolute;
     content: "";
     top: 0;
@@ -86,13 +87,13 @@
 /* Get Quote */
 .tp-quote-shape {
     position: absolute;
-    bottom: 7.5%;
-    right: 5%;
+    bottom: 5%;
+    right: 7.5%;
     z-index: 1;
 }
 .tp-quote-shape img {
     width: auto;
-    max-width: 200px;
+    max-width: 175px;
 }
 .tp-quote-wrapper p {
     text-align: justify;
@@ -100,10 +101,11 @@
 .tp-quote-thumb-wrapper {
     position: relative;
     padding-top: 0px;
-    padding-left: 25px;
+    padding-left: 30px;
 }
 .tp-quote-thumb-wrapper img {
     max-width: 100%;
+    border-radius: 6px;
 }
 .tp-quote-thumb-wrapper span {
     position: absolute;
@@ -111,7 +113,7 @@
     left: 5%;
     display: inline-block;
     width: 6px;
-    height: 424px;
+    height: 475px;
     z-index: 0;
     background: var(--tp-theme-primary);
 }
@@ -150,6 +152,17 @@
 
 
 /* Footer */
+.tp-footer-bg::after {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(10, 18, 41);
+    /* background-color: var(--tp-theme-primary);
+    opacity: 0.5; */
+}
 .tp-footer-main {
     padding-bottom: 2.5%;
 }

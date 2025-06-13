@@ -23,7 +23,7 @@ function initTabAutoSlider(sectionId) {
     intervalId = setInterval(() => {
       currentIndex = (currentIndex + 1) % tabButtons.length;
       switchTab(currentIndex);
-    }, 3000);
+    }, 5000);
   };
 
   const stopAutoSlide = () => clearInterval(intervalId);

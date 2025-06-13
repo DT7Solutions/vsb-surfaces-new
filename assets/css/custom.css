@@ -35,6 +35,9 @@
     padding: 10px 20px;
     border-radius: 6px;
 }
+.tp-page-wrapper {
+    margin-bottom: 25%;
+}
 
 /* Header */
 .tp-int-menu.tp-header-pinned {
@@ -58,7 +61,8 @@
 }
 .tp-main-menu ul li a {
     display: inline-block;
-    padding: 28px 0 28px 0;
+    font-size: 14px;
+    padding: 20px 0 20px 0;
     color: var(--tp-theme-1);
 }
 .tp-main-menu ul li:hover > a {
@@ -69,7 +73,8 @@
     top: 5%;
 }
 .tp-header-btn .tp-btn {
-    padding: 10px 20px;
+    font-size: 14px;
+    padding: 8px 16px;
 }
 
 /* Hero Section */
@@ -206,7 +211,31 @@
 }
 .tp-project-6-item:hover .tp-project-6-content {
     bottom: 10px;
- }
+}
+
+/* Products Stone Slider */
+.product__details-thumb-nav {
+    text-align: center;
+    margin-top: -15%;
+}
+.product__details-thumb-nav .nav-link {
+    display: none;
+    width: auto;
+    height: auto;
+}
+.product__details-thumb-nav .nav-link img {
+    width: 100%;
+    height: auto;
+}
+.product__details-thumb-nav .nav-link.active {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.product__details-thumb-nav .nav {
+    justify-content: center !important;
+}
 
 /* Progress Bar */
 .tp-progress-color {
@@ -333,8 +362,8 @@
     border: 1px solid var(--tp-theme-primary);
     background-color: var(--tp-theme-primary);
 }
-.tp-footer-widget-contact ul li a i,
-.tp-footer-widget-contact ul li a:hover i {
+.tp-footer-widget-contact ul li a img,
+.tp-footer-widget-contact ul li a:hover img {
     margin-right: 2.5%;
 }
 .tp-footer-widget-contact ul li a i {
@@ -343,6 +372,7 @@
 .tp-footer-widget-social a,
 .tp-footer-widget-social a::after {
     border-radius: 6px;
+    background-color: transparent;
 }
 .tp-footer-copyright {
     padding-top: 1.5%;

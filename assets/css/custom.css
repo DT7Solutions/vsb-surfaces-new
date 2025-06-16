@@ -347,6 +347,35 @@
     background: var(--tp-theme-secondary);
 }
 
+/* CTA */
+.tp-contact-area {
+    border-bottom: 4px solid var(--tp-theme-4);
+}
+.tp-contact-area .cta-ribbon {
+    background: var(--tp-theme-primary);
+    position: absolute;
+    margin: -44px 0 0 0;
+    padding: 10px 25px 6px 25px;
+    bottom: -12.5%;
+}
+.tp-contact-area .cta-ribbon:before {
+    border-left-color: var(--tp-theme-primary);
+    border-right: 10px solid var(--tp-theme-primary);
+    border-top: 17px solid transparent;
+    content: "";
+    display: block;
+    height: 0;
+    right: 100%;
+    position: absolute;
+    top: 0;
+    width: 7px;
+}
+.tp-contact-area .cta-ribbon span {
+    color: var(--tp-common-white);
+    font-size: 16px;
+    font-weight: 500;
+}
+
 /* Footer */
 .tp-footer-img-bg {
     position: absolute;

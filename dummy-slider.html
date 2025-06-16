@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Swiper Gallery</title>
+        <!-- CSS here -->
+      <link rel="stylesheet" href="assets/css/bootstrap.css">
+      <link rel="stylesheet" href="assets/css/animate.css">
+      <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+      <link rel="stylesheet" href="assets/css/swiper-gl.min.css">
+      <link rel="stylesheet" href="assets/css/magnific-popup.css">
+      <link rel="stylesheet" href="assets/css/font-awesome-pro.css"> 
+      <link rel="stylesheet" href="assets/css/flaticon_ishpat.css">
+      <link rel="stylesheet" href="assets/css/spacing.css">
+      <link rel="stylesheet" href="assets/css/main.css">
+      <link rel="stylesheet" href="assets/css/custom.css">
+
+</head>
+<body>
+
+    <style>
+        /* Quartz & Granite Slider-area */
+.quartz, .granite {
+  position: relative;
+}
+.swiper {
+  width: 100%;
+  height: auto;
+}
+.quartz .swiper-slide img,
+.granite .swiper-slide img {
+  width: 100%;
+  max-height: 375px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.quartz-thumbs, 
+.granite-thumbs {
+  margin-top: -15%;
+}
+.quartz-thumbs .swiper-slide,
+.granite-thumbs .swiper-slide {
+  width: 230px !important;
+  height: 140px;
+  opacity: 0;
+  transition: 0.3s;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quartz-thumbs .swiper-slide-thumb-active,
+.granite-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
+    </style>
+
+<section class="quartz-granite-slider-area pt-60 pb-60">
+  <div class="container">
+    <div class="row gy-5">
+      <!-- Quartz -->
+      <div class="col-lg-6">
+        <div class="quartz">
+          <div class="swiper quartz-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/img/product-slider/quartz/black-marquina-1000x760.png" alt="Quartz Black Marquina" /></div>
+              <div class="swiper-slide"><img src="assets/img/product-slider/quartz/calacutta-amazonia-1000x760.png" alt="Quartz Calacutta Amazonia" /></div>
+            </div>
+          </div>
+          <div class="swiper quartz-thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/img/product-slider/quartz/black-marquina-230x140.png" alt="Quartz Thumbnail" /></div>
+              <div class="swiper-slide"><img src="assets/img/product-slider/quartz/calacutta-amazonia-230x140.png" alt="Quartz Thumbnail" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Granite -->
+      <div class="col-lg-6">
+        <div class="granite">
+          <div class="swiper granite-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/img/product-slider/quartz/calacutta-amazonia-1000x760.png" alt="Granite Calacutta Amazonia" /></div>
+              <div class="swiper-slide"><img src="assets/img/product-slider/quartz/black-marquina-1000x760.png" alt="Granite Black Marquina" /></div>
+            </div>
+          </div>
+          <div class="swiper granite-thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/img/product-slider/quartz/calacutta-amazonia-230x140.png" alt="Granite Thumbnail" /></div>
+              <div class="swiper-slide"><img src="assets/img/product-slider/quartz/black-marquina-230x140.png" alt="Granite Thumbnail" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <!-- JS here -->
+      <script src="assets/js/vendor/jquery.js"></script>
+      <script src="assets/js/bootstrap-bundle.js"></script>
+      <script src='assets/js/three.js'></script>
+      <script src="assets/js/gsap.js"></script>
+      <script src="assets/js/webgl.js"></script>
+      <script src="assets/js/hover-effect.umd.js"></script>
+      <script src="assets/js/swiper-bundle.js"></script>
+      <script src="assets/js/magnific-popup.js"></script>
+      <script src="assets/js/tilt.jquery.min.js"></script>
+      <script src="assets/js/purecounter.js"></script>
+      <script src="assets/js/imagesloaded-pkgd.js"></script>
+      <script src="assets/js/isotope-pkgd.js"></script>
+      <script src="assets/js/jquery-appear.js"></script>
+      <script src="assets/js/jquery-knob.js"></script>
+      <script src="assets/js/nice-select.js"></script>
+      <script src="assets/js/countdown.js"></script>
+      <script src="assets/js/wow.js"></script>
+      <script src="assets/js/ajax-form.js"></script>
+      <script src="assets/js/main.js"></script>
+      <script src="assets/js/custom.js"></script>
+
+<script>
+  // Quartz Thumbs
+  const quartzThumbs = new Swiper('.quartz-thumbs', {
+    spaceBetween: 10,
+    slidesPerView: 'auto',
+    loop: true,
+    watchSlidesProgress: true,
+    centeredSlides: true,
+  });
+
+  // Quartz Main
+  const quartzMain = new Swiper('.quartz-slider', {
+    loop: true,
+    spaceBetween: 10,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    thumbs: {
+      swiper: quartzThumbs,
+    },
+  });
+
+  // Granite Thumbs
+  const graniteThumbs = new Swiper('.granite-thumbs', {
+    spaceBetween: 10,
+    slidesPerView: 'auto',
+    loop: true,
+    watchSlidesProgress: true,
+    centeredSlides: true,
+  });
+
+  // Granite Main
+  const graniteMain = new Swiper('.granite-slider', {
+    loop: true,
+    spaceBetween: 10,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    thumbs: {
+      swiper: graniteThumbs,
+    },
+  });
+</script>
+
+</body>
+</html>

@@ -1,3 +1,26 @@
+// Custom JavaScript for Quartz & Granite Slider-area
+// function initSlider(mainSelector, thumbSelector) {
+//   const thumbs = new Swiper( thumbSelector, {
+//     slidesPerView: 'auto',
+//     spaceBetween: 10,
+//     centeredSlides: true,
+//     loop: true,
+//     loopedSlides: 5,
+//     slideToClickedSlide: true,
+//   });
+//   const main = new Swiper( mainSelector, {
+//     slidesPerView: 1,
+//     spaceBetween: 10,
+//     centeredSlides: true,
+//     loop: true,
+//     thumbs: { swiper: thumbs },
+//   });
+// }
+
+// initSlider('.quartz-slider', '.quartz-thumbs');
+// initSlider('.granite-slider', '.granite-thumbs');
+
+
 // Custom JavaScript for Tabs Products Slider
 function initTabAutoSlider(sectionId) {
   const section = document.querySelector(sectionId);
@@ -46,6 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
   initTabAutoSlider("#quartz-slider");
   initTabAutoSlider("#granite-slider");
 });
+
 
 // Custom JavaScript for Products Slider
 const swiperNormal = new Swiper('.project-swiper-normal', {

@@ -23,21 +23,17 @@
 .tp-section-title {
     font-size: 40px;
 }
-.tp-section-title-pre {
-    display: none;
-    line-height: 28px;
-    margin-bottom: 0px;
-}
-.tp-section-title-pre::after {
-    border: 1px solid var(--tp-theme-primary);
-    background-color: var(--tp-theme-primary);
-}
 .tp-btn {
     padding: 10px 20px;
     border-radius: 6px;
 }
 .tp-page-wrapper {
     margin-bottom: 25%;
+}
+.dvd {
+    display: inline-block;
+    padding: 0 2px;
+    color: var(--tp-common-white);
 }
 
 /* Header */
@@ -138,7 +134,7 @@
     margin-bottom: 2.5%;
 }
 
-/* Why Choose Us Tabs */
+/* Why Choose Us VSB Group Tabs */
 .tp-feature-tab-btn .nav-pills .nav-item {
     width: 500px;
 }
@@ -146,7 +142,7 @@
     margin-bottom: 5%;
 }
 .tp-feature-tab-btn .nav-pills .nav-item .nav-link {
-    padding: 8px 15px 8px 25px;
+    padding: 20px;
 }
 .tp-feature-tab-title {
     font-size: 20px;
@@ -155,43 +151,6 @@
 }
 .tp-feature-tab-box {
     display: none;
-}
-
-/* Portfolio */
-.tp-portfolio-6-bg {
-    height: 50%;
-}
-.tp-portfolio-6-item {
-    text-align: center;
-}
-.tp-portfolio-6-thumb img {
-    width: 100%;
-}
-.tp-portfolio-6-icon {
-    left: 50%;
-    transform: translateX(-50%);
-}
-.tp-portfolio-6-content {
-    padding: 15% 5% 7.5%;
-}
-.tp-portfolio-6-title {
-    font-size: 20px;
-}
-.tp-portfolio-6-content p {
-    display: none;
-    min-height: 175px;
-}
-.tp-portfolio-6-btn a {
-    padding: 10px 20px;
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--tp-common-white);
-    background: var(--tp-theme-primary);
-    border-radius: 6px;
-}
-.tp-portfolio-6-btn a:hover {
-    color: var(--tp-common-white);
-    background: var(--tp-theme-secondary);
 }
 
 /* Projects Stones Collection */
@@ -255,18 +214,8 @@
     cursor: pointer;
 }
 
-/* Progress Bar */
-.tp-progress-color {
-    background-color: #b1daf0;
-}
-.tp-progress-title {
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--tp-heading-primary);
-}
 
-
-/* Blog */
+/* Blog Page */
 .tp-blog-2-content {
     padding: 15px 15px 20px;
 }
@@ -332,7 +281,7 @@
     background: var(--tp-theme-secondary);
 }
 
-/* Counter */
+/* Counter area */
 .tp-counter-wrapper {
     margin: 0% !important;
 }
@@ -340,7 +289,7 @@
     padding: 15%;
 }
 
-/* CTA */
+/* CTA area */
 .tp-contact-area {
     border-bottom: 4px solid var(--tp-theme-primary);
 }
@@ -349,7 +298,7 @@
     position: absolute;
     margin: -44px 0 0 0;
     padding: 10px 25px 6px 25px;
-    bottom: -13.5%;
+    bottom: -12.5%;
 }
 .tp-contact-area .cta-ribbon:before {
     border-left-color: var(--tp-theme-primary);
@@ -459,12 +408,15 @@
     line-height: 1.2;
     color: var(--tp-theme-4);
 }
+.tp-breadcrumb-nav-list li:first-child {
+    margin-left: 0;
+}
 .tp-breadcrumb-nav-list li a {
     color: var(--tp-heading-primary);
     text-decoration: none;
 }
 .tp-breadcrumb-nav-list li:hover a {
-    color: var(--tp-theme-primary);
+    color: var(--tp-theme-primary) !important;
 }
 
 /* Blogs Page */

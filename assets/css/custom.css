@@ -641,3 +641,8 @@
         height: 300px;
       }
     }
+
+
+.tp-counter-wrapper {
+    margin-left: 0px !important;
+}

@@ -455,6 +455,50 @@
     text-overflow: ellipsis;
 }
 
+/* Contact Page */
+.tp-contact-wrapper {
+    padding: 5%;
+}
+.tp-contact-input .nice-select {
+    font-size: 16px;
+    font-weight: 400;
+    height: 60px;
+    color: #565969;
+    background-color: rgb(248, 248, 248);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.tp-contact-input .nice-select:focus {
+    border: 1px solid var(--tp-theme-primary);
+}
+.nice-select {
+    outline: none;
+    background-color: #fff;
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    font-size: 14px;
+    color: var(--tp-common-black);
+    padding-left: 26px;
+    padding-right: 26px;
+    border: 1px solid #E0E2E3;
+}
+.nice-select.open .list {
+    width: 100%;
+}
+.tp-map-content {
+    width: 100%;
+    height: 500px;
+}
+.tp-contact-box {
+    margin-bottom: 5%;
+}
+.tp-contact-item {
+    padding: 5%;
+}
+.tp-map-content iframe {
+    filter: none;
+}
+
 /* Blogs Page */
 .tp-postbox-title {
     font-size: 20px;

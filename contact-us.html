@@ -206,7 +206,6 @@
       <!-- offcanvas area end -->
 
       <div class="tp-page-wrapper">
-         
          <!-- header area start -->
          <header class="tp-header-area p-relative">
             <div class="tp-header-main-sticky tp-int-menu tp-header-main p-relative">
@@ -221,26 +220,12 @@
                         <div class="tp-header-main-menu">
                            <div class="tp-main-menu d-none d-xl-block">
                               <nav class="tp-main-menu-content">
-                                 <ul class="d-none">
-                                    <li><a href="./">Home</a></li>
-                                    <li class="has-dropdown">
-                                       <a href="about.html">About</a>
-                                       <ul class="submenu">
-                                          <li><a href="about.html">About Granite</a></li>
-                                          <li><a href="about.html">About Quartz</a></li>
-                                       </ul>
-                                    </li>
-                                    <li><a href="service.html">Natural Stone</a></li>
-                                    <li><a href="service.html">Engineered Stone</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                 </ul>
                                  <ul>
                                     <li><a href="./">Home</a></li>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Quartz</a></li>
-                                    <li><a href="#">Granite</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="./about-us">About Us</a></li>
+                                    <li><a href="./quartz">Quartz</a></li>
+                                    <li><a href="./granite">Granite</a></li>
+                                    <li><a href="./contact-us">Contact Us</a></li>
                                  </ul>
                               </nav>
                            </div>
@@ -275,19 +260,18 @@
          <!-- header area end -->
 
          <main>
-
             <!-- contact breadcrumb area start -->
-            <section class="tp-breadcrumb__area pt-60 pb-60 p-relative z-index-1 fix">
-               <div class="tp-breadcrumb__bg" data-background="assets/img/breadcrumb/bradcrumb-13.jpg"></div>
+            <section class="tp-breadcrumb__area pt-90 pb-120 p-relative z-index-1 fix">
+               <div class="tp-breadcrumb__bg" data-background="assets/img/breadcrumb/about-us-bg.png"></div>
                <div class="container">
                   <div class="row align-items-center">
                      <div class="col-sm-12">
                         <div class="tp-breadcrumb__content">
-                           <h3 class="tp-breadcrumb__title">About Us</h3>
+                           <h3 class="tp-breadcrumb__title text-light">Contact Us</h3>
                            <ul class="tp-breadcrumb-nav-list">
-                              <li><a href="./">Home</a></li>
-                              <div class="dvd">/</div>
-                              <li>Contact Us</li>
+                              <li><a href="./" class="text-light">Home</a></li>
+                              <div class="dvd">//</div>
+                              <li class="text-light">Contact Us</li>
                            </ul>
                         </div>
                      </div>
@@ -301,42 +285,57 @@
                <div class="container">
                   <div class="row">
                      <div class="col-lg-12">
-                        <div class="tp-contact-wrapper mb-120">
+                        <div class="tp-contact-wrapper mb-40">
                            <h3 class="tp-contact-title">Send your Message</h3>
                            <form id="contact-form" action="assets/mail.php" method="POST">
-                              <div class="tp-contact-input-form">
-                                 <div class="row">
-                                    <div class="col-xl-6 col-lg-6">
-                                       <div class="tp-contact-input p-relative">
-                                          <input type="text" placeholder="Enter your name">
-                                       </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6">
-                                       <div class="tp-contact-input p-relative">
-                                          <input type="email" placeholder="Enter your email">
-                                       </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6">
-                                       <div class="tp-contact-input p-relative">
-                                          <input type="text" placeholder="Your website">
-                                       </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6">
-                                       <div class="tp-contact-input p-relative">
-                                          <input type="text" placeholder="Your subject">
-                                       </div>
-                                    </div>
-                                    <div class="col-xl-12">
-                                       <div class="tp-contact-input p-relative">
-                                          <textarea placeholder="Write your meassage"></textarea>
-                                       </div>
-                                    </div>
-                                    <div class="tp-contact-btn">
-                                       <button class="tp-btn">Send Message</button>
-                                       <p class="ajax-response"></p>
-                                    </div>
+                           <div class="tp-contact-input-form">
+                              <div class="row">
+                                 <div class="col-xl-6 col-lg-6">
+                                 <div class="tp-contact-input p-relative">
+                                    <input type="text" placeholder="Enter Your First Name" name="first_name">
+                                 </div>
+                                 </div>
+                                 <div class="col-xl-6 col-lg-6">
+                                 <div class="tp-contact-input p-relative">
+                                    <input type="text" placeholder="Enter Your Last Name" name="last_name">
+                                 </div>
+                                 </div>
+                                 <div class="col-xl-6 col-lg-6">
+                                 <div class="tp-contact-input p-relative">
+                                    <input type="email" placeholder="Enter Your Email" name="email">
+                                 </div>
+                                 </div>
+                                 <div class="col-xl-6 col-lg-6">
+                                 <div class="tp-contact-input p-relative">
+                                    <input type="tel" placeholder="Enter Your Telephone Number" name="telephone">
+                                 </div>
+                                 </div>
+                                 <div class="col-xl-6 col-lg-6">
+                                 <div class="tp-contact-input p-relative">
+                                    <select name="enquiry_type" required>
+                                       <option value="" disabled selected>Select Enquiry Type</option>
+                                       <option value="Quartz">Quartz</option>
+                                       <option value="Granite">Granite</option>
+                                       <option value="Other Enquiry">Other Enquiry</option>
+                                    </select>
+                                 </div>
+                                 </div>
+                                 <div class="col-xl-6 col-lg-6">
+                                 <div class="tp-contact-input p-relative">
+                                    <input type="text" placeholder="Enter Your Subject" name="subject">
+                                 </div>
+                                 </div>
+                                 <div class="col-xl-12">
+                                 <div class="tp-contact-input p-relative">
+                                    <textarea placeholder="Write Your Message" name="message"></textarea>
+                                 </div>
+                                 </div>
+                                 <div class="tp-contact-btn">
+                                 <button class="tp-btn" type="submit">Send Message</button>
+                                 <p class="ajax-response"></p>
                                  </div>
                               </div>
+                           </div>
                            </form>
                         </div>
                      </div>
@@ -350,7 +349,7 @@
                               </div>
                               <div class="tp-contact-item-content">
                                  <h3 class="tp-contact-item-title">Visit our place</h3>
-                                 <a href="#">88 New South Head Rd, Triple <br>  New York</a>
+                                 <a href="#">Venkata Sri Balaji Exports,<br> Gundlapalli(V), Maddipadu(M), Ongole,<br> Andhra Pradesh, India-523211.</a>
                               </div>
                            </div>
                         </div>
@@ -361,8 +360,9 @@
                               </div>
                               <div class="tp-contact-item-content">
                                  <h3 class="tp-contact-item-title">Contact us</h3>
-                                 <a href="#">ishpat@website.com <br>
-                                    +(602) 762 472 96</a>
+                                 <a href="mailto:sales@vsbexports.com">sales@vsbexports.com</a> <br>
+                                 <a href="tel:8978613180">+91 89786 13180</a> <br>
+                                 <a href="tel:8978613151">+91 89786 13151</a> 
                               </div>
                            </div>
                         </div>
@@ -373,7 +373,7 @@
                               </div>
                               <div class="tp-contact-item-content">
                                  <h3 class="tp-contact-item-title">Office time</h3>
-                                 <a href="#">Five days 8:00 am -  5:00 pm <br> Firday is closed</a>
+                                 <a>The team at VSB Group Works round the clock and is ready to help you with anything at any moment please Contact us</a>
                               </div>
                            </div>
                         </div>
@@ -386,7 +386,7 @@
             <!-- map area start -->
             <div class="tp-map-area">
                <div class="tp-map-content">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3178401.37203209!2d35.68689745030553!3d38.926089619386694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1696137917870!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d983425.9206985028!2d80.018029!3d15.671193000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4af9678ee0dc65%3A0x5fb849ecf1adac34!2sVENKATA%20SRI%20BALAJI%20EXPORTS%20%7C%20Best%20Granite%20Exporter%20in%20Ongole!5e0!3m2!1sen!2sus!4v1750243120428!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                </div>
             </div>
             <!-- map area end -->
@@ -398,13 +398,12 @@
                   <div class="row align-items-center">
                      <div class="col-md-8">
                         <div class="tp-contact-title-wrapper p-relative wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s">
-                           <span class="tp-section-title-pre">contact us anytime</span>
-                           <h3 class="tp-section-title mb-0">Do you have a project to discuss?</h3>
+                           <h3 class="tp-section-title mb-0">Want to Know VSB Group Pricing?</h3>
                         </div>
                      </div>
                      <div class="col-md-4">
                         <div class="tp-contact-btn-box d-flex justify-content-lg-end">
-                           <a class="tp-btn tp-icon-style" href="contact.html">Contact Us 
+                           <a class="tp-btn tp-icon-style" href="./contact-us">Contact Us 
                               <span>
                                  <svg class="qodef-svg--custom-arrow qodef-m-arrow" xmlns="http://www.w3.org/2000/svg" width="14.2" height="14.2" viewBox="0 0 14.2 14.2">
                                     <g><path d="M13.2 9V1h-8M13.4.8.7 13.5"></path><path d="M13.2 9V1h-8M13.4.8.7 13.5"></path></g>
@@ -421,13 +420,12 @@
                </div>
             </section>
             <!-- contact area end -->
-
          </main>
       
       </div>
 
       <!-- footer area start -->
-      <footer class="tp-footer-5-area tp-footer-fixed p-relative pt-60">
+      <footer class="tp-footer-5-area p-relative pt-60">
          <div class="tp-footer-img-bg" data-background="assets/img/footer/vsb-footer-bg.png"></div>
          <div class="tp-footer-box p-relative">
             <div class="container">
@@ -453,8 +451,8 @@
                               <ul>
                                  <li><a href="./">Home</a></li>
                                  <li><a href="./about-us">About Us</a></li>
-                                 <li><a href="#">Quartz</a></li>
-                                 <li><a href="#">Granite</a></li>
+                                 <li><a href="./quartz">Quartz</a></li>
+                                 <li><a href="./granite">Granite</a></li>
                                  <li><a href="./contact-us">Contact Us</a></li>
                               </ul>
                            </div>
@@ -467,6 +465,7 @@
                               <ul>
                                  <li><a href="./">Term & Conditions</a></li>
                                  <li><a href="./">Privacy Policy</a></li>
+                                 <li><a href="./">NSR Certification</a></li>
                                  <li><a href="./">CSR Policy</a></li>
                               </ul>
                            </div>
@@ -479,8 +478,8 @@
                                  <h3 class="tp-footer-widget-title">Contact Us</h3>
                                  <div class="tp-footer-widget-content">
                                     <ul>
-                                       <li><a href="https://maps.app.goo.gl/W3Qei5KtnrSfpNsp8" target="_blank"><img src="assets/img/icon/google-maps-icon.svg"> Ongole, Andhra Pradesh - 523211 </a></li>
-                                       <li><a href="mailto:sales@vsbexports.com"><img src="assets/img/icon/google-mail-icon.svg"> sales@vsbexports.com  </a></li>
+                                       <li><a href="https://maps.app.goo.gl/W3Qei5KtnrSfpNsp8" target="_blank"><img src="assets/img/icon/google-maps-icon.svg"> Ongole, Andhra Pradesh, India. </a></li>
+                                       <li><a href="mailto:sales@vsbexports.com"><img src="assets/img/icon/domain-email-icon.svg"> sales@vsbexports.com  </a></li>
                                     </ul>
                                  </div>
                               </div>
@@ -493,7 +492,7 @@
                   <div class="row">
                      <div class="col-md-8 col-12">
                         <div class="tp-footer-copyright-inner">
-                           <p>Copyright &copy; 2025 <a href="./" target="_blank">VSB Groups</a>. All rights reserved</p>
+                           <p>Copyright &copy; 2025 <span>VSB Groups</span>. All rights reserved</p>
                         </div>
                      </div>
                      <div class="col-md-4 col-12">
@@ -507,8 +506,6 @@
          </div>
       </footer>
       <!-- footer area end -->
-
-
 
       <!-- JS here -->
       <script src="assets/js/vendor/jquery.js"></script>

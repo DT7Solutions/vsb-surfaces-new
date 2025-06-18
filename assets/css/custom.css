@@ -104,7 +104,7 @@
     height: 35vh;
     width: 35vw;
     border-radius: 12px;
-    opacity: 0.2;
+    opacity: 0;
     background: var(--tp-common-black);
     z-index: -1;
     clip-path: none;
@@ -136,6 +136,9 @@
 }
 .tp-about-3-title-wrapper p {
     margin-bottom: 2.5%;
+}
+.tp-about-3-shape .shape-1 {
+    display: none;
 }
 
 /* Why Choose Us VSB Group Tabs */

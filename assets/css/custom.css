@@ -494,6 +494,7 @@
 }
 .tp-contact-item {
     padding: 5%;
+    min-height: 280px;
 }
 .tp-map-content iframe {
     filter: none;
@@ -556,7 +557,14 @@
 
 
 
+.tp-btn:hover {
+    color: var(--tp-common-white);
+    background: black;
+}
 
 
-
-
+.tp-hero-title-wrapper span{
+    /* color: white; */
+    color: var(--tp-theme-primary);
+    font-weight: 600;
+}

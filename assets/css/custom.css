@@ -564,7 +564,7 @@
 
 
 .tp-hero-title-wrapper span{
-    /* color: white; */
-    color: var(--tp-theme-primary);
+    color: black;
+    /* color: var(--tp-theme-primary); */
     font-weight: 600;
 }

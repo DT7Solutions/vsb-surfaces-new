@@ -311,6 +311,7 @@
 .tp-counter-item-content p {
     color: var(--tp-theme-primary);
     margin-bottom: 0;
+    font-weight: 400;
 }
 
 /* CTA area */

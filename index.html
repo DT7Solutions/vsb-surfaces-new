@@ -175,7 +175,7 @@
                      <div class="tp-header-main-right d-flex align-items-center justify-content-end">
                         <div class="tp-header-contact d-xl-flex align-items-center">
                            <div class="tp-header-btn d-none d-xl-block">
-                              <a class="tp-btn tp-icon-style d-none d-xl-block" href="#">Get a Quote
+                              <a class="tp-btn tp-icon-style d-none d-xl-block" href="#" data-bs-toggle="modal" data-bs-target="#getQuoteModal">Get a Quote
                                  <span>
                                     <svg class="qodef-svg--custom-arrow qodef-m-arrow"
                                        xmlns="http://www.w3.org/2000/svg" width="14.2" height="14.2"
@@ -1121,6 +1121,48 @@
       </div>
    </footer>
    <!-- footer area end -->
+
+   <!-- Modal -->
+   <div class="modal fade" id="getQuoteModal" tabindex="-1" aria-labelledby="getQuoteLabel" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+         
+         <div class="modal-header">
+         <h5 class="modal-title" id="getQuoteLabel">Get a Quote - Quartz & Granite</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         
+         <div class="modal-body">
+         <form>
+            <div class="mb-3">
+               <label for="name" class="form-label">Full Name</label>
+               <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+               <label for="phone" class="form-label">Phone Number</label>
+               <input type="tel" class="form-control" id="phone" required>
+            </div>
+            <!-- <div class="mb-3">
+               <label for="service" class="form-label">Interested In</label>
+               <select class="form-select" id="service" required>
+               <option value="">Choose a service</option>
+               <option value="Quartz">Quartz</option>
+               <option value="Granite">Granite</option>
+               <option value="Both">Both</option>
+               </select>
+            </div> -->
+            <div class="mb-3">
+               <label for="message" class="form-label">Additional Details</label>
+               <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Submit Quote Request</button>
+         </form>
+         </div>
+         
+      </div>
+   </div>
+   </div>
+
 
    <!-- JS here -->
    <script src="assets/js/vendor/jquery.js"></script>

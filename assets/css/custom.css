@@ -576,3 +576,16 @@
     background-color: #999898 !important;
 }
 
+
+#certifications-logos li a img{
+    height: 50px;
+}
+
+#main-logo .tp-footer-logo img{
+    width: 200px;
+    height: 70px;
+}
+
+#footer-contact-links li a {
+    color: black !important;
+}

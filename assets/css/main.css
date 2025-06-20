@@ -8509,7 +8509,9 @@ blockquote img {
 .tp-hover-distort-wrapper {
   position: relative;
 }
-.tp-hover-distort-wrapper .canvas {
+
+
+/* .tp-hover-distort-wrapper .canvas {
   position: absolute;
   top: 0;
   left: 0;
@@ -8520,7 +8522,9 @@ blockquote img {
 .tp-hover-distort-img {
   opacity: 0;
   object-fit: cover;
-}
+} */
+
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .tp-hover-distort-img {
     width: 100%;
@@ -16089,3 +16093,7 @@ p.checkout-coupon input[type=text]:focus {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+#footer-contact-links li a img{
+  height: 30px;
+}

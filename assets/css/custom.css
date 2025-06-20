@@ -569,3 +569,7 @@
     font-weight: 600;
     /* text-align: end; */
 }
+
+.tp-btn:hover{
+    background-color: black !important;
+}

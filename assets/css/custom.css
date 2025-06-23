@@ -171,7 +171,7 @@ section {
     padding: 20px;
 }
 .tp-feature-tab-title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     margin-bottom: 10px;
 }
@@ -725,4 +725,20 @@ section {
 }
 #quoteForm  textarea{
     height: 65px !important;
+}
+
+
+.subtitle-align {
+    display: block;
+    margin-left: 150px; 
+    width: 100%;
+    color: black;
+    
+}
+
+.breton-tetx{
+    color: black;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }

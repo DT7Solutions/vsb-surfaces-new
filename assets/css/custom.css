@@ -653,7 +653,7 @@ section {
   opacity: 0 !important;
 }
 
-#about-us-2 .tp-offer-item {
+#about-us .tp-offer-item {
     position: relative;
     padding: 2px;
     background-color: rgb(255, 255, 255);

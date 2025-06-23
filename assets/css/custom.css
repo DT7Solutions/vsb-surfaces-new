@@ -704,8 +704,8 @@ section {
 }
 
 .model-custom-btn:hover {
-  background-color: lightgrey;
-  color: #000;
+    background-color: #999898 ;
+    color: #fff;
 }
 
 
@@ -718,4 +718,11 @@ section {
 
 .head-office{
     text-decoration: underline;
+}
+
+#quoteForm .form-control{
+    height: 45px;
+}
+#quoteForm  textarea{
+    height: 65px !important;
 }

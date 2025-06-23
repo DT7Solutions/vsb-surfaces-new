@@ -1120,7 +1120,57 @@
 
    <!-- Modal -->
   <!-- Modal -->
+<!-- Bootstrap Modal -->
 <div class="modal fade" id="getQuoteModal" tabindex="-1" aria-labelledby="getQuoteLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="getQuoteLabel">Get a Quote - Quartz & Granite</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body" style="overflow: visible;">
+         <!-- sales@vsbsurfaces.com -->
+        <form id="quoteForm" action="https://formsubmit.co/dinesh.badugu@dt7solutions.com" method="POST">
+          <!-- FormSubmit hidden fields -->
+          <input type="hidden" name="_subject" value="New Quote Request from VSB Website">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://vsbsurfaces.com/thank-you.html">
+
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name / Company Name</label>
+            <input type="text" class="form-control" id="name" name="Name" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" name="Phone" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="Email" required>
+          </div>
+
+           <!-- Only Additional Details section -->
+          <div class="mb-3">
+            <label for="message" class="form-label">Additional Details</label>
+            <textarea class="form-control" id="message" name="Message" rows="4"></textarea>
+          </div>
+
+          <button type="submit" class="btn model-custom-btn w-100">Submit Quote Request</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- <div class="modal fade" id="getQuoteModal" tabindex="-1" aria-labelledby="getQuoteLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
 
@@ -1145,7 +1195,7 @@
           </div>
          <div class="mb-3">
                <label for="message" class="form-label">Additional Details</label>
-               <textarea class="form-control" id="message" rows="3"></textarea>
+               <textarea class="form-control" id="message" rows="4"></textarea>
             </div>
           <button type="submit" class="btn model-custom-btn w-100">Submit Quote Request</button>
         </form>
@@ -1153,8 +1203,7 @@
 
     </div>
   </div>
-</div>
-
+</div> -->
 
 <style>
    select {

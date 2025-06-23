@@ -48,20 +48,47 @@ const swiperReverse = new Swiper('.project-swiper-reverse', {
 
 
 
+//  document.getElementById('quoteForm').addEventListener('submit', function (e) {
+//     e.preventDefault(); // Prevent form refresh
+
+//     const name = document.getElementById('name').value.trim();
+//     const phone = document.getElementById('phone').value.trim();
+//     const email = document.getElementById('email').value.trim();
+//     const product = document.getElementById('product').value;
+//     const message = document.getElementById('message').value.trim();
+
+//     // You can send this data via AJAX, store in DB, or use FormSubmit API
+//     console.log({ name, phone, email, product, message });
+
+//     alert('Quote request submitted successfully!');
+//     document.getElementById('quoteForm').reset();
+//     const modal = bootstrap.Modal.getInstance(document.getElementById('getQuoteModal'));
+//     modal.hide();
+//   });
+
+
  document.getElementById('quoteForm').addEventListener('submit', function (e) {
-    e.preventDefault(); // Prevent form refresh
+    e.preventDefault();
 
-    const name = document.getElementById('name').value.trim();
-    const phone = document.getElementById('phone').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const product = document.getElementById('product').value;
-    const message = document.getElementById('message').value.trim();
+    const form = e.target;
 
-    // You can send this data via AJAX, store in DB, or use FormSubmit API
-    console.log({ name, phone, email, product, message });
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+    })
+    .then(response => {
+      if (response.ok) {
+        alert('Quote request submitted successfully!');
+        form.reset();
 
-    alert('Quote request submitted successfully!');
-    document.getElementById('quoteForm').reset();
-    const modal = bootstrap.Modal.getInstance(document.getElementById('getQuoteModal'));
-    modal.hide();
+        const modal = bootstrap.Modal.getInstance(document.getElementById('getQuoteModal'));
+        modal.hide();
+      } else {
+        alert('Something went wrong. Please try again.');
+      }
+    })
+    .catch(error => {
+      alert('Failed to send quote. Please try again later.');
+      console.error('Error:', error);
+    });
   });

@@ -680,10 +680,10 @@ section {
     font-weight: 750;
     color: black;
 }
-.companey-contact span {
+/* .companey-contact span {
     color: rgb(66, 66, 66);
     font-weight: 750;
-}
+} */
 .tp-footer-col-1 {
     margin-right: 0px;
 }
@@ -714,4 +714,8 @@ section {
 }
 .tp-about-3-title-wrapper p:last-child {
   margin-bottom: 0;
+}
+
+.head-office{
+    text-decoration: underline;
 }

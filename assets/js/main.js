@@ -1283,4 +1283,36 @@
 		new PureCounter();
 	
 
+//   const swiper = new Swiper(".about-slider", {
+//     loop: true,
+//     effect: "fade",
+//     fadeEffect: {
+//       crossFade: true,
+//     },
+//     autoplay: {
+//       delay: 3000,
+//       disableOnInteraction: false,
+//     },
+//     pagination: {
+//       el: ".about-slider-pagination",
+//       clickable: true,
+//     },
+//   });
+
+ var swiper = new Swiper(".about-slider", {
+      loop: true,
+      slidesPerView: 1,
+      pagination: {
+         el: ".about-slider-pagination",
+         clickable: true,
+      },
+      autoplay: {
+         delay: 3000,
+         disableOnInteraction: false,
+      },
+      effect: "slide", 
+      speed: 600,
+	  navigation: false
+   });
+
 })(jQuery);

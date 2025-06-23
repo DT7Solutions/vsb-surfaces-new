@@ -707,3 +707,11 @@ section {
   background-color: lightgrey;
   color: #000;
 }
+
+
+.tp-about-3-title-wrapper p {
+  margin-bottom: 5px;
+}
+.tp-about-3-title-wrapper p:last-child {
+  margin-bottom: 0;
+}

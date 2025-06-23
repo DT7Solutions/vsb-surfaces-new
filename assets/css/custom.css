@@ -603,7 +603,7 @@ section {
     list-style: none;
 }
 #certifications-logos li a img{
-    height: 80px;
+    height: 118px;
 }
 
 #main-logo {
@@ -611,13 +611,25 @@ section {
     justify-content: space-around;
 }
 #main-logo .tp-footer-logo img{
-    width: 150px;
-    height: 65px;
+    width: 120px;
+    height: 50px;
 }
 
 #footer-contact-links li a {
-    color: black !important;
+    color: rgb(59, 59, 59) !important;
 }
+
+#footer-contact-links li a:hover{
+    color: #ff5f14 !important;
+}
+
+/* .tp-footer-widget-content ul li a:hover {
+    color: var(--tp-theme-primary);
+    margin-left: 15px;
+} */
+
+
+
 
 .images-aligen {
     display: flex;
@@ -648,14 +660,50 @@ section {
     background: none !important;
 }
 
-.swiper-pagination-bullet {
+.about-slider .swiper-pagination-bullet {
   background: none ; 
   opacity: 0 !important;
 }
 
-#about-us .tp-offer-item {
+.about-slider .tp-offer-item {
     position: relative;
     padding: 2px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 80px 0px rgba(0, 8, 21, 0.04);
+}
+
+.tp-footer-col-4 {
+    margin-left: 20px;
+}
+
+.companey-contact h6{
+    font-weight: 750;
+    color: black;
+}
+.companey-contact span {
+    color: rgb(66, 66, 66);
+    font-weight: 750;
+}
+.tp-footer-col-1 {
+    margin-right: 0px;
+}
+
+.footer-container{
+    padding: 0px 100px;
+}
+
+.flag-img{
+    height: 20px;
+}
+
+
+.model-custom-btn {
+  background-color: #ff5f14;
+  color: #fff;
+  border: none;
+}
+
+.model-custom-btn:hover {
+  background-color: lightgrey;
+  color: #000;
 }

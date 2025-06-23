@@ -1310,7 +1310,7 @@
          delay: 3000,
          disableOnInteraction: false,
       },
-      effect: "slide", 
+      effect: "fade", 
       speed: 600,
 	  navigation: false
    });

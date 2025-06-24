@@ -102,8 +102,7 @@ document.getElementById('quoteForm').addEventListener('submit', function(e) {
     .then(function() {
       alert('Quote request sent successfully!');
       document.getElementById('quoteForm').reset();
-      var modal = bootstrap.Modal.getInstance(document.getElementById('getQuoteModal'));
-      alert('your request submited sucessfuly!');
+      var modal = bootstrap.Modal.getInstance(document.getElementById('getQuoteModal'
       modal.hide();
     }, function(error) {
       console.error('Failed to send request:', error);

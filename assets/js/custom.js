@@ -3,19 +3,19 @@ const quartzSwiper = new Swiper('.quartz-swiper', {
    loop: true,
    effect: 'fade',
    fadeEffect: { crossFade: true },
-   autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-   }
+   // autoplay: {
+   //    delay: 5000,
+   //    disableOnInteraction: false
+   // }
 });
 const graniteSwiper = new Swiper('.granite-swiper', {
    loop: true,
    effect: 'fade',
    fadeEffect: { crossFade: true },
-   autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-   }
+   // autoplay: {
+   //    delay: 5000,
+   //    disableOnInteraction: false
+   // }
 });
 
 // Custom JavaScript for Products Slider

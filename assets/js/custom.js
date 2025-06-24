@@ -67,28 +67,47 @@ const swiperReverse = new Swiper('.project-swiper-reverse', {
 //   });
 
 
- document.getElementById('quoteForm').addEventListener('submit', function (e) {
-    e.preventDefault();
+//  document.getElementById('quoteForm').addEventListener('submit', function (e) {
+//     e.preventDefault();
 
-    const form = e.target;
+//     const form = e.target;
 
-    fetch(form.action, {
-      method: 'POST',
-      body: new FormData(form),
-    })
-    .then(response => {
-      if (response.ok) {
-        alert('Quote request submitted successfully!');
-        form.reset();
+//     fetch(form.action, {
+//       method: 'POST',
+//       body: new FormData(form),
+//     })
+//     .then(response => {
+//       if (response.ok) {
+//         alert('Quote request submitted successfully!');
+//         form.reset();
 
-        const modal = bootstrap.Modal.getInstance(document.getElementById('getQuoteModal'));
-        modal.hide();
-      } else {
-        alert('Something went wrong. Please try again.');
-      }
-    })
-    .catch(error => {
-      alert('Failed to send quote. Please try again later.');
-      console.error('Error:', error);
+//         const modal = bootstrap.Modal.getInstance(document.getElementById('getQuoteModal'));
+//         modal.hide();
+//       } else {
+//         alert('Something went wrong. Please try again.');
+//       }
+//     })
+//     .catch(error => {
+//       alert('Failed to send quote. Please try again later.');
+//       console.error('Error:', error);
+//     });
+//   });
+
+// service_y461uwx     NBga67NYF9q1D88bs3W1U
+
+document.getElementById('quoteForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+ debugger;
+  emailjs.sendForm('service_y461uwx', 'template_f5ruxdp', this)
+    .then(function() {
+      alert('Quote request sent successfully!');
+      document.getElementById('quoteForm').reset();
+      var modal = bootstrap.Modal.getInstance(document.getElementById('getQuoteModal'));
+      alert('your request submited sucessfuly!');
+      modal.hide();
+    }, function(error) {
+      console.error('Failed to send request:', error);
+      alert('Failed to send your quote request. Please try again later.');
     });
-  });
+});
+

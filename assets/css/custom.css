@@ -780,7 +780,7 @@ section {
 }
 .btn-get-quote:hover{
     background-color: #FF5F14 !;
-    color: white !important;
+    color: rgb(7, 7, 7) !important;
 }
 
 .tp-main-menu-content ul li a span {

@@ -1082,24 +1082,24 @@
             <form id="quoteForm">
                <div class="mb-3">
                   <label for="name" class="form-label">Full Name / Company Name</label>
-                  <input type="text" class="form-control" id="name" name="Name" required pattern="^[A-Za-z\s]+$"
+                  <input type="text" class="form-control" id="name" name="Name" placeholder="enter your full name or companey name" required 
                      title="Only letters and spaces allowed">
                </div>
 
                <div class="mb-3">
                   <label for="phone" class="form-label">Phone Number</label>
-                  <input type="number" class="form-control" id="phone" name="Phone" required pattern="^[0-9()+\s]+$"
+                  <input type="number" class="form-control" id="phone" name="Phone" placeholder="enter your phone number" required pattern="^[0-9+\s()\-]{7,15}$" 
                      title="Only numbers, +, (, ) and spaces are allowed">
                </div>
 
                <div class="mb-3">
                   <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" name="Email" required>
+                  <input type="email" class="form-control" id="email" name="Email" placeholder="enter you email address" required>
                </div>
 
                <div class="mb-3">
                   <label for="message" class="form-label">Additional Details</label>
-                  <textarea class="form-control" id="message" name="Message" rows="4" placeholder="enter you message"></textarea>
+                  <textarea class="form-control" id="message" name="Message" rows="4" placeholder="please enter you message .."></textarea>
                </div>
 
                <button type="submit" class="btn model-custom-btn w-100">Submit Quote Request</button>

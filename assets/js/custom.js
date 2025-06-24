@@ -3,19 +3,19 @@ const quartzSwiper = new Swiper('.quartz-swiper', {
    loop: true,
    effect: 'fade',
    fadeEffect: { crossFade: true },
-   // autoplay: {
-   //    delay: 5000,
-   //    disableOnInteraction: false
-   // }
+   autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+   }
 });
 const graniteSwiper = new Swiper('.granite-swiper', {
    loop: true,
    effect: 'fade',
    fadeEffect: { crossFade: true },
-   // autoplay: {
-   //    delay: 5000,
-   //    disableOnInteraction: false
-   // }
+   autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+   }
 });
 
 // Custom JavaScript for Products Slider
@@ -102,7 +102,7 @@ document.getElementById('quoteForm').addEventListener('submit', function(e) {
     .then(function() {
       alert('Quote request sent successfully!');
       document.getElementById('quoteForm').reset();
-      var modal = bootstrap.Modal.getInstance(document.getElementById('getQuoteModal'
+      var modal = bootstrap.Modal.getInstance(document.getElementById('getQuoteModal'));
       modal.hide();
     }, function(error) {
       console.error('Failed to send request:', error);

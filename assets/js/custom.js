@@ -110,3 +110,21 @@ document.getElementById('quoteForm').addEventListener('submit', function(e) {
     });
 });
 
+
+document.addEventListener("DOMContentLoaded", function () {
+         // Select all anchor links in the offcanvas menu
+         const menuLinks = document.querySelectorAll('.tp-main-menu-mobile a');
+
+         menuLinks.forEach(link => {
+            link.addEventListener('click', function () {
+            // Close the offcanvas menu
+            document.querySelector('.offcanvas__area').classList.remove('offcanvas-opened');
+
+            // Hide the body overlay if used
+            const overlay = document.querySelector('.body-overlay');
+            if (overlay) {
+               overlay.classList.remove('opened');
+            }
+            });
+         });
+      });

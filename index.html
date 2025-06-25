@@ -100,17 +100,6 @@
             </div>
 
             <div class="tp-main-menu-mobile fix d-xl-none mb-30"></div>
-
-            <div class="offcanvas__contact d-none d-xl-block">
-               <div class="offcanvas__text mb-30">
-                  <p>The design readable content of a page hen looking at its layout The point our of using Movie
-                     template</p>
-               </div>
-               <div class="offcanvas__gallery mb-30">
-                  <h4 class="offcanvas__title">Gallery</h4>
-
-               </div>
-            </div>
             <div class="offcanvas-info mb-30">
                <div class="tp-header-btn  d-xl-block">
                               <a class="tp-btn tp-icon-style d-xl-block" href="#" data-bs-toggle="modal" data-bs-target="#getQuoteModal">Get a Quote
@@ -1139,8 +1128,17 @@
       document.getElementById("current-year").textContent = new Date().getFullYear();
       document.getElementById('phone').addEventListener('input', function (e) {
          // Allow only digits, +, (), -, and space
-         this.value = this.value.replace(/[^0-9+\s()-]/g, '');
+         this.value = this.value.replace(/[^0-9+\-()/\s]/g, '');
       });
+
+     document.querySelectorAll('.tp-main-menu-mobile a').forEach(link => {
+    link.addEventListener('click', () => {
+      // Close offcanvas menu
+      document.querySelector('.offcanvas__area').classList.remove('offcanvas-open');
+      // Remove body overlay
+      document.querySelector('.body-overlay').classList.remove('opened');
+    });
+  });
    </script>
 
    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>

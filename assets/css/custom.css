@@ -819,7 +819,10 @@ section {
    
 }
 
-
+.tp-btn:hover {
+color: var(--tp-common-white);
+ background-color: #999898 !important;
+}
 
 }
 

@@ -112,9 +112,26 @@
                </div>
             </div>
             <div class="offcanvas-info mb-30">
+               <div class="tp-header-btn  d-xl-block">
+                              <a class="tp-btn tp-icon-style d-xl-block" href="#" data-bs-toggle="modal" data-bs-target="#getQuoteModal">Get a Quote
+                                 <span>
+                                    <svg class="qodef-svg--custom-arrow qodef-m-arrow" xmlns="http://www.w3.org/2000/svg" width="14.2" height="14.2" viewBox="0 0 14.2 14.2">
+                                       <g>
+                                          <path d="M13.2 9V1h-8M13.4.8.7 13.5"></path>
+                                          <path d="M13.2 9V1h-8M13.4.8.7 13.5"></path>
+                                       </g>
+                                       <g>
+                                          <path d="M13.2 9V1h-8M13.4.8.7 13.5"></path>
+                                          <path d="M13.2 9V1h-8M13.4.8.7 13.5"></path>
+                                       </g>
+                                    </svg>
+                                 </span>
+                              </a>
+                           </div>
+
                <!-- <a class="tp-btn tp-icon-style d-none d-xl-block tetx-light offcanvas__title" href="#" data-bs-toggle="modal" data-bs-target="#getQuoteModal">Get a Quote</a> -->
-               <h4 class="offcanvas__title btn-get-quote" data-bs-toggle="modal" data-bs-target="#getQuoteModal">Get a
-                  Quote</h4>
+               <!-- <h4 class="offcanvas__title btn-get-quote" data-bs-toggle="modal" data-bs-target="#getQuoteModal">Get a
+                  Quote</h4> -->
             </div>
          </div>
       </div>
@@ -1023,18 +1040,18 @@
                <!-- sales@vsbsurfaces.com -->
                <!-- EmailJS form -->
                <form id="quoteForm">
-                  <input type="hidden" name="from_name" value="VSB Surfaces">
+                  <input type="hidden" name="from_name" value="VSB Quartz & Granite">
                   <div class="mb-3">
                      <label for="name" class="form-label">Full Name / Company Name</label>
                      <input type="text" class="form-control" id="name" name="Name"
-                        placeholder="enter your full name or companey name" required
+                        placeholder="enter your full name or company name" required
                         title="Only letters and spaces allowed">
                   </div>
 
                   <div class="mb-3">
                      <label for="phone" class="form-label">Phone Number</label>
-                     <input type="number" class="form-control" id="phone" name="Phone"
-                        placeholder="enter your phone number" required pattern="^[0-9+\s()\-]{7,15}$"
+                     <input type="text" class="form-control" id="phone" name="Phone"
+                        placeholder="enter your phone number" required 
                         title="Only numbers, +, (, ) and spaces are allowed">
                   </div>
 
@@ -1047,7 +1064,7 @@
                   <div class="mb-3">
                      <label for="message" class="form-label">Additional Details</label>
                      <textarea class="form-control" id="message" name="Message" rows="4"
-                        placeholder="please enter you message .."></textarea>
+                        placeholder="Please let us know the product you are interested in.."></textarea>
                   </div>
 
                   <button type="submit" class="btn model-custom-btn w-100">Submit Quote Request</button>
@@ -1120,6 +1137,10 @@
    <script src="assets/js/custom.js"></script>
    <script>
       document.getElementById("current-year").textContent = new Date().getFullYear();
+      document.getElementById('phone').addEventListener('input', function (e) {
+         // Allow only digits, +, (), -, and space
+         this.value = this.value.replace(/[^0-9+\s()-]/g, '');
+      });
    </script>
 
    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>

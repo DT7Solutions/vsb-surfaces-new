@@ -343,7 +343,7 @@
 				touchStartPreventDefault: false,
 				speed:1000,
 				autoplay:{
-					delay:5000
+					delay:3000
 				},
 				effect: 'fade',
 				simulateTouch : true,
